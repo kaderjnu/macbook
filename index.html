@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title tag -->
+    <title>Document</title>
+    <!-- twailwind css  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="grid lg:grid-cols-2 sm:grid-cols-1 mt-16">
+                <div>
+                    <img class="h-2/5  block mx-auto " src="mac.png" alt="">
+                </div>
+                <div class=" mx-auto">
+                    <h1 class=" text-2xl font-bold	"> Customize Your MacBook Pro</h1>
+                    <p class=" font-normal text-justify	pr-16">Backlit Magic Keyboard, Touch Bar, Touch ID, and Force
+                        Touch trackpad,Up to 2TB Also available with Intel Core i5 or i7 processor
+                    </p>
+                    <div class="my-1.5">
+                        <h2 class="text-xl font-semibold ">Memory</h2>
+                        <div class="flex py-1.5	">
+                            <button id="memory-8gb"
+                                class=" p-1 focus:ring-2 focus:ring-blue-600 border-2 border-gray-400 rounded">8 GB
+                                unfiled memory</button>
+                            <button id="memory-16gb"
+                                class=" p-1 focus:ring-2 focus:ring-blue-600 border-2 border-gray-400	rounded ml-8">16
+                                GB unfiled memory</button>
+                        </div>
+                        <div class="my-1.5">
+                            <h2 class="text-xl font-semibold ">Storage</h2>
+                            <div class="flex py-1.5	">
+                                <button id="storage-256gb"
+                                    class=" p-1 focus:ring-2 focus:ring-blue-600 border-2 border-gray-400 rounded">256GB
+                                    SSD storage</button>
+                                <button id=" storage-512"
+                                    class=" p-1 focus:ring-2 focus:ring-blue-600 border-2 border-gray-400 rounded ml-8">512GB
+                                    SSD storage</button>
+                                <button id=" storage-1tb"
+                                    class=" p-1 focus:ring-2 focus:ring-blue-600 border-2 border-gray-400 rounded ml-8">1TB
+                                    SSD storage</button>
+
+
+                            </div>
+                            <div class="my-1.5">
+                                <h2 class="text-xl font-semibold ">Choose Your Delivary OpTion</h2>
+                                <div class="flex py-1.5	">
+                                    <button id=" delivary-free"
+                                        class=" p-1 focus:ring-2 focus:ring-blue-600 border-2 border-gray-400 rounded">Fri,Aug
+                                        25 Free Prime Delivery</button>
+                                    <button onclick="extraCharge('delivaryfree',true)" id=" delivary-crg"
+                                        class=" p-1 focus:ring-2 focus:ring-blue-600 border-2 border-gray-400	rounded ml-8">Fri,Aug
+                                        21 Delivery
+                                        Charge 20$
+                                    </button>
+                                </div>
+                                <div class="mt-16">
+                                    <div class=" flex">
+                                        <h3 class="  w-1/3  text-lg">Best Price </h3>
+                                        <h4>1299</h4>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class=" flex">
+                                        <h3 class="  w-1/3	 text-lg">Extra Memory Cost </h3>
+                                        <h4>$ <span id="memory-cost">0</span></h4>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class=" flex">
+                                        <h3 class="  w-1/3	 text-lg">Extra Storage Cost </h3>
+                                        <h4>$ <span id="storage-cost">0</span></h4>
+                                    </div>
+                                    <div class="">
+                                        <div class=" flex">
+                                            <h3 class="  w-1/3  text-lg">Delivary Charge </h3>
+                                            <h4 class=" 	">$ <span class=" delivaryfree-20" id="delivaryfree">0</span>
+                                            </h4>
+                                        </div>
+                                        <div class="">
+                                            <div class=" flex ">
+                                                <h3 class="  w-1/3 text-lg w-1/3 border-t-2 border-black">Total Price
+                                                </h3>
+                                                <h4 class=" border-t-2 border-black	">$ <span
+                                                        id="total-cost">1299</span></h4>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="mb-12 ">
+                                                <h3 class="  w-1/3 text-md">Add Your PromeCode</h3>
+                                                <input id=" promo-input" class=" border-2 border-black" type="text"
+                                                    name="" id="">
+                                                <button onclick="promoClick()" id=" promo-btn"
+                                                    class="bg-red-600 text-white rounded px-2 py-1.5">Apply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="text-gray-600">
+                            <h4 class="  border-t-2 border-black text-2xl	">$ <span id="total-cost2">00</span></h4>
+        </section>
+    </main>
+
+
+
+    <!-- script link  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
